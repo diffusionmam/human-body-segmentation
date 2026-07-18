@@ -2,7 +2,7 @@
 
 An AI-powered computer vision application that detects **12 human body parts** from images, videos, and live webcam streams, and identifies the **dominant color** on each detected region.
 
-## 🎯 What It Does
+## What It Does
 
 This app uses **MediaPipe** (Google's computer vision framework) to:
 
@@ -23,7 +23,7 @@ left_arm:   Blue   (shirt sleeve)
 right_leg:  Brown  (pants)
 ```
 
-## ✨ Features
+## Features
 
 - **Image Analysis**: Upload any photo (JPG, PNG, WebP) → get annotated image + JSON
 - **Video Analysis**: Upload a video (MP4, MOV, WebM) → get annotated video + per-part summary
@@ -34,7 +34,7 @@ right_leg:  Brown  (pants)
 - **Skin tone aware**: Fair/medium/dark skin all correctly classified as "Brown" (not "Red")
 - **No backend server required**: Everything runs locally in a single Streamlit process
 
-## 📋 Requirements
+## Requirements
 
 - **Python 3.10+** (3.11 recommended)
 - **pip** (Python package manager)
@@ -43,7 +43,7 @@ right_leg:  Brown  (pants)
 
 **Supported platforms**: Windows, macOS, Linux (x86_64, ARM64)
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Step 1: Clone the Repository
 
@@ -245,7 +245,7 @@ human-body-segmentation/
 └── README.md                 # This file
 ```
 
-## 🧪 Running Tests
+## Running Tests
 
 ```bash
 # Activate venv first
@@ -257,7 +257,7 @@ python -m pytest tests/ -v
 
 All 10 tests should pass.
 
-## 📊 Technical Details
+## Technical Details
 
 ### How It Works
 
@@ -282,21 +282,3 @@ The classifier uses HSV thresholds:
 - **Video**: 2-5 seconds per frame (use frame skipping for long videos)
 - **Live (WebRTC)**: 15-30 FPS on a modern CPU
 - **Live (Polling)**: ~1 FPS
-
-## 🤝 Contributing
-
-Contributions welcome! Feel free to open issues or pull requests.
-
-## 📄 License
-
-MIT License. See [LICENSE](LICENSE) for details.
-
-##  Acknowledgments
-
-- [MediaPipe](https://mediapipe.dev/) by Google for pose estimation and segmentation
-- [Streamlit](https://streamlit.io/) for the web UI framework
-- [OpenCV](https://opencv.org/) for image processing
-
-## 📧 Support
-
-For issues, please open a GitHub issue at: https://github.com/YOUR_USERNAME/human-body-segmentation/issues
