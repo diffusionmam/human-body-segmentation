@@ -64,6 +64,15 @@ data/samples/*.png
 # Environment
 .env
 
+# Video files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.flv
+*.wmv
+
 # Temporary
 *.tmp
 *.bak
